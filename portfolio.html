@@ -250,6 +250,7 @@
       </section>
     </main>
 
+    <!-- Footer section -->
     <footer class="page-footer flexible">
       <div class="footter-box container">
         <div class="footer-contacts-box">
@@ -270,8 +271,8 @@
           </address>
         </div>
 
-        <div>
-          <em class="join">присоединяйтесь</em>
+        <div class="join-box">
+          <p class="join">присоединяйтесь</p>
 
           <ul class="flexible list">
             <li class="socials-list">
@@ -307,6 +308,19 @@
             </li>
           </ul>
         </div>
+
+        <form class="subscribe-box">
+          <p class="join">Подпишитесь на рассылку</p>
+          <label class="subscribe-label">
+            <input class="subscribe-input" type="email" name="mail" placeholder="E-mail" />
+            <button class="button subscribe-button" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
       </div>
     </footer>
   </body>
