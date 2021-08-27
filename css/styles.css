@@ -255,7 +255,7 @@ img {
   margin-bottom: 30px;
 }
 
-.hero-button-open {
+.button {
   background-color: var(--accent);
   color: var(--primary-color);
 
@@ -276,8 +276,8 @@ img {
   cursor: pointer;
 }
 
-.hero-button-open:hover,
-.hero-button-open:focus {
+.button:hover,
+.button:focus {
   background-color: var(--button-bgc);
 }
 
@@ -488,8 +488,9 @@ img {
   align-items: baseline;
 }
 
-.footer-contacts-box {
-  margin-right: 70px;
+.join-box {
+  margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-socials-link {
@@ -518,6 +519,53 @@ img {
   text-transform: uppercase;
 
   color: var(--primary-color);
+}
+
+.subscribe-box {
+  margin-right: auto;
+}
+
+.subscribe-input {
+  outline: none;
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-color);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-input:focus-within {
+  color: var(--primary-color);
+  border-color: var(--accent);
+}
+
+.subscribe-input:not(:placeholder-shown) {
+  color: var(--primary-color);
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.subscribe-label,
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* portfolio.html */
@@ -679,7 +727,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -725,4 +773,131 @@ img {
 .hero-button-close:hover,
 .hero-button-close:focus {
   fill: var(--accent);
+}
+
+.form-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field:focus-within input,
+.form-field:focus-within .form-icon,
+.form-field-comment:focus-within textarea {
+  border-color: var(--accent);
+  fill: var(--accent);
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-name {
+  padding-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-field input {
+  padding: 12px 16px 12px 42px;
+  height: 40px;
+  outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field-comment textarea {
+  resize: none;
+  padding: 12px 16px;
+  height: 120px;
+  outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field input,
+.form-field-comment textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  width: 425px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 30px;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .icon {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  background-image: url('/images/icon-check.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.label-link {
+  display: inline-flex;
+  padding-left: 5px;
+  color: var(--accent);
+}
+
+.form .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
