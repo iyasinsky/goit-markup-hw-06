@@ -57,7 +57,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-          <button class="button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -373,7 +373,7 @@
     <!-- Footer section -->
     <footer class="page-footer flexible">
       <div class="footter-box container">
-        <div class="footer-contacts-box">
+        <div>
           <a href="./index.html" class="logo link">Web<span class="logo-footer">Studio</span></a>
 
           <address class="contacts">
@@ -431,15 +431,17 @@
 
         <form class="subscribe-box js-user-form">
           <p class="join">Подпишитесь на рассылку</p>
-          <label class="subscribe-label">
-            <input class="subscribe-input" type="email" name="mail" placeholder="E-mail" />
-            <button class="button subscribe-button" type="submit">
+          <div class="subscribe">
+            <label class="subscribe-label">
+              <input class="subscribe-input" type="email" name="mail" placeholder="E-mail" />
+            </label>
+            <button class="btn subscribe" type="submit">
               Подписаться
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </label>
+          </div>
         </form>
       </div>
     </footer>
@@ -487,10 +489,11 @@
           <label class="label">
             <input class="checkbox visually-hidden" type="checkbox" name="conditions" />
             <span class="icon"></span>
-            Соглашаюсь с рассылкой и принимаю<a class="label-link" href="">Условия договора</a>
+            <span>Соглашаюсь с рассылкой и принимаю</span>
+            <a class="label-link" href="">Условия договора</a>
           </label>
 
-          <button class="button" type="submit">Отправить</button>
+          <button class="btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>

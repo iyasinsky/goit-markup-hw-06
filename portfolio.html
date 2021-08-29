@@ -253,7 +253,7 @@
     <!-- Footer section -->
     <footer class="page-footer flexible">
       <div class="footter-box container">
-        <div class="footer-contacts-box">
+        <div>
           <a href="./index.html" class="logo link">Web<span class="logo-footer">Studio</span></a>
 
           <address class="contacts">
@@ -309,17 +309,19 @@
           </ul>
         </div>
 
-        <form class="subscribe-box">
+        <form class="subscribe-box js-user-form">
           <p class="join">Подпишитесь на рассылку</p>
-          <label class="subscribe-label">
-            <input class="subscribe-input" type="email" name="mail" placeholder="E-mail" />
-            <button class="button subscribe-button" type="submit">
+          <div class="subscribe">
+            <label class="subscribe-label">
+              <input class="subscribe-input" type="email" name="mail" placeholder="E-mail" />
+            </label>
+            <button class="btn subscribe" type="submit">
               Подписаться
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </label>
+          </div>
         </form>
       </div>
     </footer>
